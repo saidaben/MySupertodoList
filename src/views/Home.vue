@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
+    <img class="logo" alt="Vue logo" src="../assets/logo.png" />
     <HelloWorld msg="My TodoList" />
   </div>
 </template>
@@ -16,3 +16,9 @@ export default {
   }
 };
 </script>
+
+<style >
+.logo{width: 200px;
+height: 200px;
+padding-bottom: 100px;}
+</style>

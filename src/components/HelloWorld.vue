@@ -18,5 +18,10 @@ export default {
 
 }
 <style>
-
+.hello{background: whitesmoke;
+box-shadow: 30px 30px 25px black;
+border: 1px solid black;
+width: 100vh;
+height: 800px;
+margin: auto;}
 </style>
