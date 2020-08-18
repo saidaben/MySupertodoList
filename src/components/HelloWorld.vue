@@ -3,20 +3,21 @@
     <div class="contenaire">
 <Input />
   <UserInput @add-new-todo="pushNewTodo" />
+  <Alltodo />
     </div>
     <!-- <h1>{{ msg }}</h1> -->
  
-       
+
   </div>
 </template>
 
 
 <script>
 import Input from "@/components/Input";
+import Alltodo from "@/views/Alltodo";
 
-  
 export default {
-  components: { Input },
+  components: { Input, Alltodo },
   name: "HelloWorld",
   props: {
     msg: String
@@ -26,17 +27,15 @@ export default {
       noms: [ {nom: "faire mon api"},],
     };
   },
-  
+
    methods: {
     pushNewTodo(i) {
       console.log("i");
       this.noms.push(i);
     },
-   
+
   },
 };
-
-
 </script>
 
 
@@ -45,7 +44,6 @@ export default {
 .hello{
 margin: auto;
 display: flex;}
-
 .contenaire{
   background: whitesmoke;
 box-shadow: 30px 30px 25px black;

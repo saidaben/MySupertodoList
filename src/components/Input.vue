@@ -7,11 +7,10 @@
 
 <script>
 export default {
-
  data() {
     return {
       nom: "",
-      
+
     };
 },
  methods: {
@@ -19,17 +18,14 @@ export default {
       if (this.nom) {
         this.$emit("add-new-todo", {
           nom: this.nom,
-         
+
         });
         this.nom = "";
-      
+
       }
     },
   },
 };
-
-
-
 </script>
 
 <style>
@@ -37,12 +33,10 @@ export default {
    background: skyblue;
   color: black;
   padding: 2rem;}
-
   .input-list-add{
     padding-top: 3px;
     width:200px;
     height: 15px;}
-
     .btn{height: 30px;
     width:57px;
     margin:auto;
@@ -50,6 +44,4 @@ export default {
       text-align: center;
       font-size: 12px;
       }
-
-
     </style>
